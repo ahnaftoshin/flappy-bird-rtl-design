@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "flappy_nextstate_logic_tb_behav" "xil_defaultlib.flappy_nextstate_logic_tb" -log "elaborate.log" 
