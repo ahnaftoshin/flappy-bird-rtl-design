@@ -1,7 +1,7 @@
-Running: xsim.dir/flappy_controller_tb_behav/xsimk.exe -simmode gui -wdb flappy_controller_tb_behav.wdb -simrunnum 0 -socket 57666
+Running: xsim.dir/flappy_controller_tb_behav/xsimk.exe -simmode gui -wdb flappy_controller_tb_behav.wdb -simrunnum 0 -socket 54483
 Design successfully loaded
-Design Loading Memory Usage: 10844 KB (Peak: 10844 KB)
-Design Loading CPU Usage: 46 ms
+Design Loading Memory Usage: 10816 KB (Peak: 10816 KB)
+Design Loading CPU Usage: 93 ms
 Simulation completed
-Simulation Memory Usage: 11600 KB (Peak: 11600 KB)
-Simulation CPU Usage: 92 ms
+Simulation Memory Usage: 11576 KB (Peak: 11576 KB)
+Simulation CPU Usage: 139 ms

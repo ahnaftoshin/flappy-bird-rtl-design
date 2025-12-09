@@ -5,4 +5,29 @@ Running: D:/vivado/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture structural of entity xil_defaultlib.dflipflop [dflipflop_default]
+Compiling architecture behavioral of entity xil_defaultlib.myNot [mynot_default]
+Compiling architecture behavioral of entity xil_defaultlib.myAND [myand_default]
+Compiling architecture behavioral of entity xil_defaultlib.myAND3 [myand3_default]
+Compiling architecture behavioral of entity xil_defaultlib.myOR [myor_default]
+Compiling architecture structural of entity xil_defaultlib.flappy_nextstate_logic [flappy_nextstate_logic_default]
+Compiling architecture structural of entity xil_defaultlib.flappy_output_logic [flappy_output_logic_default]
+Compiling architecture structural of entity xil_defaultlib.flappy_controller [flappy_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.my6bitReg [my6bitreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.myXOR [myxor_default]
+Compiling architecture structural of entity xil_defaultlib.myHalfAdder [myhalfadder_default]
+Compiling architecture structural of entity xil_defaultlib.myAdder [myadder_default]
+Compiling architecture structural of entity xil_defaultlib.my6bitAdder [my6bitadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.lessthan_6bit [lessthan_6bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.my6bitMUX [my6bitmux_default]
+Compiling architecture structural of entity xil_defaultlib.flappy_datapath [flappy_datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.flappy_processor [flappy_processor_default]
+Compiling architecture behavioral of entity xil_defaultlib.flappy_processor_tb
+Built simulation snapshot flappy_processor_tb_behav

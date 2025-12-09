@@ -63,6 +63,8 @@ signal gnd : std_logic := '0';
     signal below_gndinv : std_logic;
     signal S1inv : std_logic;
     signal S0inv : std_logic;
+    
+    signal N0inv : std_logic;
 
 begin
 
@@ -72,14 +74,16 @@ notbelow_gnd: myNOT port map (below_gnd, below_gndinv);
 notS1inv: myNOT port map (S1, S1inv);
 notS0inv: myNOT port map (S0, S0inv);
 
-OR1: myOR3 port map (S1,S0,B,ORtoAND1);
-OR2: myOR3 port map (S1inv,S0inv,below_gndinv,ORtoAND2);
-OR3: myOR port map (ANDtoOR1,ANDtoOR2,N1);
+OR1: myAND port map (S1inv,S0,ORtoAND1);
+OR2: myAND3 port map (S0,Binv,below_gndinv,ORtoAND2);
+AND3: myOR port map (ORtoAND1,ORtoAND2,N1); 
 
-AND1: myAND port map (S1inv,S0,ANDtoOR1);
-AND2: myAND3 port map (S0,Binv,below_gndinv, ANDtoOR2);
-AND3: myAND port map (ORtoAND1,ORtoAND2,N0);
+AND1: myAND port map (S0inv,Binv,ANDtoOR1);
+AND2: myAND port map (S1,below_gnd, ANDtoOR2);
+OR3: myOR port map (ANDtoOR1,ANDtoOR2,N0inv);  
+
+finalNOT: myNOT port map (N0inv, N0);
 
 -- Single bit test port
-testport <= gnd;
+testport <= ANDtoOR1;
 end Structural;
